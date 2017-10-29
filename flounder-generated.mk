@@ -45,6 +45,7 @@ PRODUCT_PACKAGES += \
                     libnvmmlite_video \
                     libnvmmlite_msaudio \
                     libnvmm_aviparser \
+                    libnvmm_asfparser \
                     libnvtnr \
                     libnvomx \
                     libnvomxilclient \
