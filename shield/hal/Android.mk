@@ -27,7 +27,11 @@ include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := camera.tegra
+ifeq ($(TARGET_TEGRA_VERSION),t210)
 LOCAL_SRC_FILES := lib/hw/camera.tegra.$(TARGET_TEGRA_VERSION).so
+else
+LOCAL_SRC_FILES := lib/hw/camera.tegra.so
+endif
 LOCAL_MODULE_SUFFIX := .so
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
 LOCAL_MODULE_TARGET_ARCH := arm

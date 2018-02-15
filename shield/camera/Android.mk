@@ -125,7 +125,11 @@ include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := libnvvicsi_v3
+ifeq ($(TARGET_TEGRA_VERSION),t210)
 LOCAL_SRC_FILES := lib/libnvvicsi_v3.$(TARGET_TEGRA_VERSION).so
+else
+LOCAL_SRC_FILES := lib/libnvvicsi_v3.so
+endif
 LOCAL_MODULE_SUFFIX := .so
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
 LOCAL_MODULE_TARGET_ARCH := arm
