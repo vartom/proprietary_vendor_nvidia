@@ -23,7 +23,7 @@ PRODUCT_PACKAGES += \
     HotwordEnrollmentOKGoogleRT5677
 
 # Nvidia blob(s) necessary for Dragon hardware
-PRODUCT_COPY_FILES := \
+PRODUCT_COPY_FILES += \
     vendor/google/dragon/proprietary/etc/permissions/privapp-permissions-google.xml:system/etc/permissions/privapp-permissions-google.xml \
     vendor/google/dragon/proprietary/etc/permissions/privapp-permissions-platform.xml:system/etc/permissions/privapp-permissions-platform.xml \
     vendor/google/dragon/proprietary/etc/sysconfig/nexus.xml:system/etc/sysconfig/nexus.xml \
