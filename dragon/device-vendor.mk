@@ -28,3 +28,7 @@ PRODUCT_COPY_FILES += \
     vendor/google/dragon/proprietary/etc/sysconfig/nexus.xml:system/etc/sysconfig/nexus.xml \
     vendor/google/dragon/proprietary/lib/libkeymaster_staging.so:system/lib/libkeymaster_staging.so \
     vendor/google/dragon/proprietary/lib64/libkeymaster_staging.so:system/lib64/libkeymaster_staging.so
+
+PRODUCT_COPY_FILES += \
+    vendor/google/dragon/proprietary/lib/libvulkan.so:system/lib/libvulkan.so \
+    vendor/google/dragon/proprietary/lib64/libvulkan.so:system/lib64/libvulkan.so
