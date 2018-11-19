@@ -11,10 +11,15 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-
+#     vendor/google/dragon-common/proprietary/vendor/lib/libminijail_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libminijail_vendor.so \
+#    vendor/google/dragon-common/proprietary/vendor/lib64/libminijail_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libminijail_vendor.so \
+#    vendor/google/dragon-common/proprietary/vendor/lib/hw/ts.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/ts.default.so \
+#    vendor/google/dragon-common/proprietary/vendor/lib64/libselinux_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libselinux_vendor.so \
 # Proprietary Nvidia blob(s) necessary for Dragon-common hardware
 
 PRODUCT_COPY_FILES += \
+    vendor/google/dragon-common/proprietary/vendor/bin/move_widevine_data.sh:$(TARGET_COPY_OUT_SYSTEM)/bin/move_widevine_data.sh \
+    vendor/google/dragon-common/proprietary/vendor/bin/tsec_service:vendor/bin/tsec_service \
     vendor/google/dragon-common/proprietary/vendor/bin/tlk_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/tlk_daemon \
     vendor/google/dragon-common/proprietary/vendor/etc/model_frontal.xml:$(TARGET_COPY_OUT_VENDOR)/etc/model_frontal.xml \
     vendor/google/dragon-common/proprietary/vendor/etc/version_info.txt:$(TARGET_COPY_OUT_VENDOR)/etc/version_info.txt \
@@ -64,14 +69,11 @@ PRODUCT_COPY_FILES += \
     vendor/google/dragon-common/proprietary/vendor/lib/hw/gralloc.tegra.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/gralloc.tegra.so \
     vendor/google/dragon-common/proprietary/vendor/lib/hw/keystore.dragon.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/keystore.dragon.so \
     vendor/google/dragon-common/proprietary/vendor/lib/hw/memtrack.dragon.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/memtrack.dragon.so \
-    vendor/google/dragon-common/proprietary/vendor/lib/hw/ts.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/ts.default.so \
     vendor/google/dragon-common/proprietary/vendor/lib/hw/vulkan.tegra.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vulkan.tegra.so \
     vendor/google/dragon-common/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:$(TARGET_COPY_OUT_VENDOR)/lib/mediadrm/libwvdrmengine.so \
-    vendor/google/dragon-common/proprietary/vendor/lib/libdrm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdrm.so \
     vendor/google/dragon-common/proprietary/vendor/lib/libfcamdng.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfcamdng.so \
     vendor/google/dragon-common/proprietary/vendor/lib/libglcore.so:$(TARGET_COPY_OUT_VENDOR)/lib/libglcore.so \
     vendor/google/dragon-common/proprietary/vendor/lib/libmediacodecservice.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmediacodecservice.so \
-    vendor/google/dragon-common/proprietary/vendor/lib/libminijail_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libminijail_vendor.so \
     vendor/google/dragon-common/proprietary/vendor/lib/libnppc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libnppc.so \
     vendor/google/dragon-common/proprietary/vendor/lib/libnppi.so:$(TARGET_COPY_OUT_VENDOR)/lib/libnppi.so \
     vendor/google/dragon-common/proprietary/vendor/lib/libnvaudiofx.so:$(TARGET_COPY_OUT_VENDOR)/lib/libnvaudiofx.so \
@@ -140,9 +142,7 @@ PRODUCT_COPY_FILES += \
     vendor/google/dragon-common/proprietary/vendor/lib64/hw/memtrack.dragon.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/memtrack.dragon.so \
     vendor/google/dragon-common/proprietary/vendor/lib64/hw/vulkan.tegra.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vulkan.tegra.so \
     vendor/google/dragon-common/proprietary/vendor/lib64/mediadrm/libwvdrmengine.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mediadrm/libwvdrmengine.so \
-    vendor/google/dragon-common/proprietary/vendor/lib64/libdrm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdrm.so \
     vendor/google/dragon-common/proprietary/vendor/lib64/libglcore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libglcore.so \
-    vendor/google/dragon-common/proprietary/vendor/lib64/libminijail_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libminijail_vendor.so \
     vendor/google/dragon-common/proprietary/vendor/lib64/libnvavp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnvavp.so \
     vendor/google/dragon-common/proprietary/vendor/lib64/libnvblit.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnvblit.so \
     vendor/google/dragon-common/proprietary/vendor/lib64/libnvcms.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnvcms.so \
@@ -159,7 +159,6 @@ PRODUCT_COPY_FILES += \
     vendor/google/dragon-common/proprietary/vendor/lib64/libnvwinsys.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnvwinsys.so \
     vendor/google/dragon-common/proprietary/vendor/lib64/libnvwsi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnvwsi.so \
     vendor/google/dragon-common/proprietary/vendor/lib64/libphs.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libphs.so \
-    vendor/google/dragon-common/proprietary/vendor/lib64/libselinux_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libselinux_vendor.so \
     vendor/google/dragon-common/proprietary/vendor/lib64/libstagefrighthw.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstagefrighthw.so \
     vendor/google/dragon-common/proprietary/vendor/lib64/libtlk_secure_hdcp_up.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtlk_secure_hdcp_up.so \
     vendor/google/dragon-common/proprietary/vendor/lib64/libtsec_wrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtsec_wrapper.so \
