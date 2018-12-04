@@ -19,12 +19,9 @@ PRODUCT_PACKAGES += \
 # Prebuilt privileged APKs
 PRODUCT_PACKAGES += \
     DragonKeyboardFirmwareUpdater \
-    GCS \
     HotwordEnrollmentOKGoogleRT5677
 
-# Nvidia blob(s) necessary for Dragon hardware
+# feature PIXEL_EXPERIENCE
 PRODUCT_COPY_FILES += \
-    vendor/google/dragon/proprietary/etc/permissions/privapp-permissions-google.xml:system/etc/permissions/privapp-permissions-google.xml \
-    vendor/google/dragon/proprietary/etc/sysconfig/nexus.xml:system/etc/sysconfig/nexus.xml \
-    vendor/google/dragon/proprietary/lib/libkeymaster_staging.so:system/lib/libkeymaster_staging.so \
-    vendor/google/dragon/proprietary/lib64/libkeymaster_staging.so:system/lib64/libkeymaster_staging.so
+    vendor/google/dragon/proprietary/etc/sysconfig/nexus.xml:system/etc/sysconfig/nexus.xml
+
